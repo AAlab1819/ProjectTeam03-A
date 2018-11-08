@@ -41,6 +41,7 @@ cout<< "Hello World!";
 comment
 ```
 sniplet of code
+jelasin code greedy or dp yg penting
 ```
 comment
 
