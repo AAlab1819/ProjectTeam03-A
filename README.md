@@ -32,7 +32,9 @@ output sample
 
 ### Greedy Approach
 we use a function called **Greedy** to do all the job
+
 ```c++
+int n;
 cin>> n;
 cout<< "Hello World!"
 ```
