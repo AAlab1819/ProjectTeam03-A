@@ -7,8 +7,7 @@ This repo will solve Codeforces problem [489 C](https://codeforces.com/problemse
 - [Denny Raymond](http://codeforces.com/profile/dendenray)
 
 ## Requirement
-- c++ 11
-- dll
+- [c++ 11](https://osdn.net/projects/sfnet_tdm-gcc/)
 
 ## Installation/running instruction
 - compile the code.....
