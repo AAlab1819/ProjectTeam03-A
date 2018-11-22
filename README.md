@@ -45,20 +45,21 @@ For greedy method, the code can be seen below:
 
 ```
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
     int m,s,i,k;
-    cin>>m>>s;//our input
-
+    cin>>m>>s;//our first and second input
+    
+    //if it is more than 9*m, zero, or minus, then the output is -1 -1
     if(s<1 && m>1 || s>m*9)
     {
-        cout<<-1 <<" "<<-1<<endl;//if it is more than 9*m, zero, or minus, then the output is -1 -1
+        cout<<-1 <<" "<<-1<<endl;
     }
     else
     {
+        //Finding max and min
         for(i=m-1,k=s;i>=0;i--)
         {
             int j=max(0,k-9*i);
