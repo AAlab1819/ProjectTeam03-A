@@ -39,6 +39,7 @@ Greedy is an algorithmic paradigm that builds up a solution piece by piece, alwa
 
 We can make whatever choice seems best at the moment and then solve the problems that arise later. The choice made by a greedy algorithm may depend on choices made so far but not on future choices or all the solutions to the subproblem. It iteratively makes one greedy choice after another, reducing each given problem into a smaller one.
 
+{
 #include <iostream>
 
 using namespace std;
@@ -48,7 +49,8 @@ int main()
     int m,s,i,k;
     cin>>m>>s;
 
-    if(s<1 && m>1 || s>m*9){
+    if(s<1 && m>1 || s>m*9)
+    {
         cout<<-1 <<" "<<-1<<endl;
     }
     else{
@@ -68,7 +70,7 @@ int main()
     }
     return 0;
 }
-
+}
 
 ### DP approach
 
