@@ -20,7 +20,6 @@ If the input is:
 
 2 15
 
-<break>
 Then the output will be:
 
 69 96
