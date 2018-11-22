@@ -2,13 +2,13 @@
 This repo will solve Codeforces problem [489 C](https://codeforces.com/problemset/problem/489/C) using Greedy approach and Dynamic Programming. We will also compare which method is better.
 
 ## Team Member
--[Alessandro Luiz Kartika](http://codeforces.com/profile/Elderhawk)
--[Eugene Sebastian]
--[Denny Raymond](http://codeforces.com/profile/dendenray)
--[Steven](http://codeforces.com/profile/Steve2015) 
+- [Alessandro Luiz Kartika](http://codeforces.com/profile/Elderhawk)
+- [Eugene Sebastian]
+- [Denny Raymond](http://codeforces.com/profile/dendenray)
+- [Steven](http://codeforces.com/profile/Steve2015) 
 
 ## Requirement
--[c++ 11](https://osdn.net/projects/sfnet_tdm-gcc/)
+- [c++ 11](https://osdn.net/projects/sfnet_tdm-gcc/)
 
 ## Installation/running instruction
 Our code is written in C++, therefore it can work in DevC++ program or [C++ Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
