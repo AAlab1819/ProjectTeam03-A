@@ -37,7 +37,7 @@ The problem want us to find the smallest and the largest numbers from the two in
 ### Greedy Approach
 We use a function called **Greedy** to do all the job.
 
-Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems; an optimization problem can be solved using Greedy if the problem has the following property: At every step, we can make a choice that looks best at the moment, and we get the optimal solution of the complete problem.
+Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems; an optimization problem can be solved using greedy if the problem has the following property: At every step, we can make a choice that looks best at the moment, and we get the optimal solution of the complete problem.
 
 We can make whatever choice seems best at the moment and then solve the problems that arise later. The choice made by a greedy algorithm may depend on choices made so far but not on future choices or all the solutions to the subproblem. It iteratively makes one greedy choice after another, reducing each given problem into a smaller one.
 
@@ -82,5 +82,5 @@ The idea behind dynamic programming is quite simple. In general, to solve a give
 
 ### Comparison
 
-In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids](https://en.wikipedia.org/wiki/Matroid), while Dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
+In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids](https://en.wikipedia.org/wiki/Matroid), while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
 
