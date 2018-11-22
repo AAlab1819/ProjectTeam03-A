@@ -17,9 +17,12 @@ Our code is written in C++, therefore it can work in DevC++ program or [C++ Onli
 We are going to use an example from the [problem](https://codeforces.com/contest/489/problem/C).
 
 If the input is:
+
 2 15
 
+
 Then the output will be:
+
 69 96
 
 ## Explanation
