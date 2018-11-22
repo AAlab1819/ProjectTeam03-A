@@ -78,7 +78,7 @@ int main()
 
 Dynamic Programming (DP) is a method for problem solving used in math and computer science in which large problems are broken down into smaller problems. Through solving the individual smaller problems, the solution to the larger problem is discovered.
 
-The idea behind dynamic programming is quite simple. In general, to solve a given problem, we need to solve different parts of the problem (subproblems), then combine the solutions of the subproblems to reach an overall solution. Often when using a more naive method, many of the subproblems are generated and solved many times.
+The idea behind dynamic programming is quite simple. In general, to solve a given problem, we need to solve different parts of the problem, then combine the solutions of the subproblems to reach an overall solution. Often when using other method, many of the subproblems are generated and solved many times.
 
 ### Comparison
 
