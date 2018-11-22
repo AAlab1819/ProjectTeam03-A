@@ -41,6 +41,8 @@ Greedy is an algorithmic paradigm that builds up a solution piece by piece, alwa
 
 We can make whatever choice seems best at the moment and then solve the problems that arise later. The choice made by a greedy algorithm may depend on choices made so far but not on future choices or all the solutions to the subproblem. It iteratively makes one greedy choice after another, reducing each given problem into a smaller one.
 
+For greedy method, the code can be seen below:
+
 ```
 #include <iostream>
 
@@ -49,24 +51,27 @@ using namespace std;
 int main()
 {
     int m,s,i,k;
-    cin>>m>>s;
+    cin>>m>>s;//our input
 
     if(s<1 && m>1 || s>m*9)
     {
-        cout<<-1 <<" "<<-1<<endl;
+        cout<<-1 <<" "<<-1<<endl;//if it is more than 9*m, zero, or minus, then the output is -1 -1
     }
-    else{
-        for(i=m-1,k=s;i>=0;i--){
+    else
+    {
+        for(i=m-1,k=s;i>=0;i--)
+        {
             int j=max(0,k-9*i);
             if(j==0 && i==m-1 && k)
                 j=1;
-                cout<<j;
+                cout<<j;//first input, the minimum
                 k = k-j;
         }
         cout<<' ';
-        for(i=m-1,k=s;i>=0;i--){
+        for(i=m-1,k=s;i>=0;i--)
+        {
             int j=min(9,k);
-            cout<<j;
+            cout<<j;//second output, the maximum
             k = k-j;
         }
     }
