@@ -28,7 +28,11 @@ output sample
 
 ## Explanation
 
+
+
 ### Problem statement
+The problem want us to find the smallest and the largest numbers from the two input numbers. If, there are none, print out -1 and -1.
+
 
 ### Greedy Approach
 we use a function called **Greedy** to do all the job
