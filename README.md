@@ -8,7 +8,7 @@ This repo will solve Codeforces problem [489 C](https://codeforces.com/problemse
 - [Steven](http://codeforces.com/profile/Steve2015) 
 
 ## Requirement
-- [c++ 11](https://osdn.net/projects/sfnet_tdm-gcc/)
+- [C++ 11](https://osdn.net/projects/sfnet_tdm-gcc/)
 
 ## Installation/running instruction
 Our code is written in C++, therefore it can work in DevC++ program or [C++ Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
@@ -16,29 +16,54 @@ Our code is written in C++, therefore it can work in DevC++ program or [C++ Onli
 ## Sample I/O
 We are going to use an example from the [problem](https://codeforces.com/contest/489/problem/C).
 
+**Sample #1**
+
 If the input is:
 
+```
 2 15
+```
 
 Then the output will be:
 
+```
 69 96
+```
+
+**Sample #2**
+
+If the input is:
+
+```
+3 0
+```
+
+Then the output will be:
+
+```
+-1 -1
+```
 
 ## Explanation
 To find minimum number:
+
+<p align="justify">
 The number is traversing from i=m-1 to i=0 and filling every digit. If i=m-1 then he is filling 1st digit and (m-1) digits are remaining (excluding present digit). If i=m-2 then he is filling 2nd digit and (m-2) digits are remaining(excluding present digit), so if the number is at some i then i digits are remaining.
 
 To find maximum number:
+
+<p align="justify">
 First we take as many nines as possible and decrease the sum by 9 respectively and when sum becomes less than 9 we print that digit and remaining digits should be zero.
 
 ### Problem statement
+<p align="justify">
 The problem want us to find the smallest and the largest numbers from the two input numbers. The number we enter cannot be negative and cannot be decimal. If there are none, print out -1 and -1. For example if s = 0 will produce the output: -1 -1.
 
 ### Greedy Approach
-We use a function called **Greedy** to do all the job.
-
+<p align="justify">
 Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems; an optimization problem can be solved using greedy if the problem has the following property: At every step, we can make a choice that looks best at the moment, and we get the optimal solution of the complete problem.
 
+<p align="justify">
 We can make whatever choice seems best at the moment and then solve the problems that arise later. The choice made by a greedy algorithm may depend on choices made so far but not on future choices or all the solutions to the subproblem. It iteratively makes one greedy choice after another, reducing each given problem into a smaller one.
 
 For greedy method, the code can be seen below:
