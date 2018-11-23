@@ -178,7 +178,7 @@ void highest(int counter, int remainder)
 }
 ```
 
-The solution link can be seen [here](https://pastebin.com/fkT0eVe4)
+The solution link can be seen [here](https://codeforces.com/contest/489/submission/46112688)
 
 ### Comparison
 In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids][1], while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
