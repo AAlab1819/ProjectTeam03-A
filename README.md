@@ -188,6 +188,7 @@ In conclusion, greedy algorithms solve combinatorial problems having the propert
 If we try to input the example above, we can get the time as follow:
 
 **With Greedy**
+
 Example 1:
 
 ```
