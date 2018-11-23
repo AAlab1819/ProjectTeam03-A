@@ -133,24 +133,29 @@ For dynamic programming method, the code can be seen below:
 using namespace std;
 void highest(int counter, int remainder);
 void lowest(int counter, int remainder, int m);
-int main (){
+int main ()
+{
     int m,s,i,k;
     cin>>m>>s;
     if((s<1 && m>1)||s>m*9)
     cout<<-1<<' '<<-1<<endl;
  
-    else {
+    else
+    {
         lowest(m-1,s,m);
         cout << " ";
         highest(m-1,s);
     }
 }
  
-void lowest(int counter, int remainder, int m) {
+void lowest(int counter, int remainder, int m)
+{
     int subtractor;
-    if (counter >= 0){
+    if (counter >= 0)
+    {
         subtractor = max(0, remainder - 9 * counter);
-        if (subtractor == 0 && counter == m - 1 && remainder ) {
+        if (subtractor == 0 && counter == m - 1 && remainder )
+        {
             subtractor = 1;
         }
         remainder -= subtractor;
@@ -160,7 +165,8 @@ void lowest(int counter, int remainder, int m) {
     }
 }
  
-void highest(int counter, int remainder) {
+void highest(int counter, int remainder)
+{
     int subtractor;
     if (counter >= 0){
         subtractor = min(9, remainder );
