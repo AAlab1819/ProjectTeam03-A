@@ -184,3 +184,32 @@ The solution link can be seen [here](https://codeforces.com/contest/489/submissi
 In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids][1], while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
 
 [1]:https://en.wikipedia.org/wiki/Matroid
+
+If we try to input the example above, we can get the time as follow:
+
+**With Greedy**
+Example 1:
+
+```
+~1.3sec
+```
+Example 2:
+
+```
+~1sec
+```
+
+**With Dynamic Programming**
+
+Example 1:
+
+```
+~1.2sec
+```
+
+Example 2:
+```
+~0.9sec
+```
+
+From the experiment above, using dynamic programming is faster... a little bit...👌
