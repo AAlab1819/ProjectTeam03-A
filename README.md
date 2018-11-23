@@ -114,5 +114,7 @@ The idea behind dynamic programming is quite simple. In general, to solve a give
 
 ### Comparison
 <p align="justify">
+    
 In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids](https://en.wikipedia.org/wiki/Matroid), while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
+</p>
 
