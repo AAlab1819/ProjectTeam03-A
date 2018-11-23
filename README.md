@@ -212,3 +212,6 @@ Example 2:
 ```
 
 From the experiment above, using dynamic programming is faster... a little bit...👌
+
+<p align="justify">
+**Note:The time for the code to process also depends on the input time, so we try to quickly input the number repeatedly and count the average**
