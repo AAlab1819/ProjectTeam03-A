@@ -120,12 +120,12 @@ The complexity of greedy algorithm is O(n).
 
 ### DP approach
 <p align="justify">
-Dynamic Programming (DP) is a method for problem solving used in math and computer science in which large problems are broken down into smaller problems. Through solving the individual smaller problems, the solution to the larger problem is discovered.
 
-<p align="justify">
-The idea behind dynamic programming is quite simple. In general, to solve a given problem, we need to solve different parts of the problem, then combine the solutions of the subproblems to reach an overall solution. Often when using other method, many of the subproblems are generated and solved many times.
+The way its solve is same with greedy, just we make function to find the highest and the lowest number possible. in this way we think the way the code run gonna become a little bit faster because it can be run at the same time. 
 
-For dynamic programming method, the code can be seen below:
+The complexity of greedy algorithm is O(n).
+
+snipplet code : 
     
 ```c++
 
