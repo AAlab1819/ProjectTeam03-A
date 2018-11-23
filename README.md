@@ -79,7 +79,7 @@ We can make whatever choice seems best at the moment and then solve the problems
 For greedy method, the code can be seen below:
 
 ```
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main()
@@ -129,12 +129,13 @@ The idea behind dynamic programming is quite simple. In general, to solve a give
 For dynamic programming method, the code can be seen below:
     
 ```
-#include <iostream>
-#include <cmath>
- 
+#include<iostream>
+#include<cmath>
 using namespace std;
+
 void highest(int counter, int remainder);
 void lowest(int counter, int remainder, int m);
+
 int main ()
 {
     int m,s,i,k;
