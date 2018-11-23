@@ -11,13 +11,13 @@ This repo will solve Codeforces problem [489 C](https://codeforces.com/problemse
 - [C++ 11](https://osdn.net/projects/sfnet_tdm-gcc/)
 
 ## Installation/running instruction
-**For website**
+**Using online compiler**
 - Open your web browser
 - Go to [C++ Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
 - Copy paste the source code from the rpository into the website's code field
 - Run the program
 
-**For DevC++**
+**Using DevC++ program**
 - Open DevC++
 - Copy paste the source code from the rpository into the DevC++'s code field
 - Run the program
@@ -57,7 +57,7 @@ The output will be:
 
 ### Problem statement
 <p align="justify">
-The problem want us to find the smallest and the largest numbers from the two input numbers. The number we enter cannot be negative and cannot be decimal. If there are none, print out -1 and -1. For example if s = 0 will produce the output: -1 -1.
+Our Codeforce problem is called "Given Length and Sum of Digits...". The problem want us to find the smallest and the largest numbers from the two input numbers. The number we enter cannot be negative and cannot be decimal. If there are none, print out -1 and -1. For example if s = 0 will produce the output: -1 -1.
 
 **To find minimum number:**
 
@@ -115,6 +115,8 @@ int main()
 }
 ```
 
+The solution link can be seen [here](https://codeforces.com/contest/489/submission/45753386)
+
 ### DP approach
 <p align="justify">
 Dynamic Programming (DP) is a method for problem solving used in math and computer science in which large problems are broken down into smaller problems. Through solving the individual smaller problems, the solution to the larger problem is discovered.
@@ -169,6 +171,8 @@ void highest(int counter, int remainder) {
     }
 }
 ```
+
+The solution link can be seen [here](https://pastebin.com/fkT0eVe4)
 
 ### Comparison
 In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids][1], while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
