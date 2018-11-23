@@ -193,23 +193,23 @@ If we try to input the example above, we can get the time as follow:
 
 **With Greedy**
 
-Example 1:
+Example #1:
 ```
 ~1.3sec
 ```
-Example 2:
+Example #2:
 ```
 ~1sec
 ```
 
 **With Dynamic Programming**
 
-Example 1:
+Example #1:
 ```
 ~1.2sec
 ```
 
-Example 2:
+Example #2:
 ```
 ~0.9sec
 ```
