@@ -113,8 +113,6 @@ Dynamic Programming (DP) is a method for problem solving used in math and comput
 The idea behind dynamic programming is quite simple. In general, to solve a given problem, we need to solve different parts of the problem, then combine the solutions of the subproblems to reach an overall solution. Often when using other method, many of the subproblems are generated and solved many times.
 
 ### Comparison
-<p align="justify">
 In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids], while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
 
-[matroid]: (https://en.wikipedia.org/wiki/Matroid)
-
+[matroids]: https://en.wikipedia.org/wiki/Matroid
