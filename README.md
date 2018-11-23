@@ -24,7 +24,7 @@ If the input is:
 2 15
 ```
 
-Then the output will be:
+The output will be:
 
 ```
 69 96
@@ -38,7 +38,7 @@ If the input is:
 3 0
 ```
 
-Then the output will be:
+The output will be:
 
 ```
 -1 -1
@@ -106,12 +106,13 @@ int main()
 ```
 
 ### DP approach
-
+<p align="justify">
 Dynamic Programming (DP) is a method for problem solving used in math and computer science in which large problems are broken down into smaller problems. Through solving the individual smaller problems, the solution to the larger problem is discovered.
 
+<p align="justify">
 The idea behind dynamic programming is quite simple. In general, to solve a given problem, we need to solve different parts of the problem, then combine the solutions of the subproblems to reach an overall solution. Often when using other method, many of the subproblems are generated and solved many times.
 
 ### Comparison
-
+<p align="justify">
 In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids](https://en.wikipedia.org/wiki/Matroid), while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
 
