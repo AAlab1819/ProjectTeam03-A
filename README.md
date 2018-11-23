@@ -45,12 +45,12 @@ The output will be:
 ```
 
 ## Explanation
-To find minimum number:
+**To find minimum number:**
 
 <p align="justify">
 The number is traversing from i=m-1 to i=0 and filling every digit. If i=m-1 then he is filling 1st digit and (m-1) digits are remaining (excluding present digit). If i=m-2 then he is filling 2nd digit and (m-2) digits are remaining(excluding present digit), so if the number is at some i then i digits are remaining.
 
-To find maximum number:
+**To find maximum number:**
 
 <p align="justify">
 First we take as many nines as possible and decrease the sum by 9 respectively and when sum becomes less than 9 we print that digit and remaining digits should be zero.
