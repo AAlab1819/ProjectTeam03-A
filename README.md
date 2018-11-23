@@ -117,7 +117,7 @@ int main()
 
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/45753386)
 
-The complexity
+The complexity of greedy algorithm is O(n).
 
 ### DP approach
 <p align="justify">
@@ -181,6 +181,8 @@ void highest(int counter, int remainder)
 ```
 
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/46112688)
+
+The complexity for dynamic programming is O(n).
 
 ### Comparison
 <p align="justify">
