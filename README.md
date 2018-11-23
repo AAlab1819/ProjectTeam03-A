@@ -71,22 +71,21 @@ First we take as many nines as possible and decrease the sum by 9 respectively a
 
 ### Greedy Approach
 <p align="justify">
-Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems; an optimization problem can be solved using greedy if the problem has the following property: At every step, we can make a choice that looks best at the moment, and we get the optimal solution of the complete problem.
+For the greedy approach, we first check if the sum is lying between 1 and 9*(length of the numbers), if not than print -1 -1 ( i mean Maximum sum we can form with a number of length m is 9*m(by placing all nines) so if s is greater than 9*m there is no answer. 
 
-<p align="justify">
-We can make whatever choice seems best at the moment and then solve the problems that arise later. The choice made by a greedy algorithm may depend on choices made so far but not on future choices or all the solutions to the subproblem. It iteratively makes one greedy choice after another, reducing each given problem into a smaller one.
+to find the maximum number, first we take as many 9 as possible and decrease the sum by 9 and when we sum become less than 9, we just print that digit and remaining digits should be zero.
 
-For greedy method, the code can be seen below:
+The hardest part its actually finding the minimum as there are restriction that there should be no leading zeroes thus we can't just start assigning 9 to low priority digits ( digits on the right), to escape that. 
+we transvers from i=m-1 to i=0 and filling every digit. check 
+if i=m-1 then he is filling 1st digit and (m-1) digits are remaining (excluding present digit). if i=m-2 then he is filling 2nd digit and (m-2) digits are remaining(excluding present digit).
+thus if its at some i the i digits are remaining. 
+maximum possible sum we can form with those remaining i digits is 9*i and k is the remaining sum, since __j=max(0,k-9*i), the we assign 1 to j (if i==m and j==9), its because we should not have a leading zeroes, so its taking j at that place and subtracting j from remain of sum k.
 
-```
-#include<iostream>
-using namespace std;
 
-int main()
-{
-    int m,s,i,k;
-    cin>>m>>s;//our first and second input
-    
+snipplet code:
+
+```c++
+
     //if it is more than 9*m, zero, or minus, then the output is -1 -1
     if(s<1 && m>1 || s>m*9)
     {
