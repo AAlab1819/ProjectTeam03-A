@@ -11,12 +11,21 @@ This repo will solve Codeforces problem [489 C](https://codeforces.com/problemse
 - [C++ 11](https://osdn.net/projects/sfnet_tdm-gcc/)
 
 ## Installation/running instruction
-Our code is written in C++, therefore it can work in DevC++ program or [C++ Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
+**For website**
+- Open your web browser
+- Go to [C++ Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
+- Copy paste the source code from the rpository into the website's code field
+- Run the program
+
+**For DevC++**
+- Open DevC++
+- Copy paste the source code from the rpository into the DevC++'s code field
+- Run the program
 
 ## Sample I/O
 We are going to use an example from the [problem](https://codeforces.com/contest/489/problem/C).
 
-**Sample #1**
+**Example #1**
 
 If the input is:
 
@@ -30,7 +39,7 @@ The output will be:
 69 96
 ```
 
-**Sample #2**
+**Example #2**
 
 If the input is:
 
@@ -45,6 +54,11 @@ The output will be:
 ```
 
 ## Explanation
+
+### Problem statement
+<p align="justify">
+The problem want us to find the smallest and the largest numbers from the two input numbers. The number we enter cannot be negative and cannot be decimal. If there are none, print out -1 and -1. For example if s = 0 will produce the output: -1 -1.
+
 **To find minimum number:**
 
 <p align="justify">
@@ -54,10 +68,6 @@ The number is traversing from i=m-1 to i=0 and filling every digit. If i=m-1 the
 
 <p align="justify">
 First we take as many nines as possible and decrease the sum by 9 respectively and when sum becomes less than 9 we print that digit and remaining digits should be zero.
-
-### Problem statement
-<p align="justify">
-The problem want us to find the smallest and the largest numbers from the two input numbers. The number we enter cannot be negative and cannot be decimal. If there are none, print out -1 and -1. For example if s = 0 will produce the output: -1 -1.
 
 ### Greedy Approach
 <p align="justify">
@@ -111,6 +121,54 @@ Dynamic Programming (DP) is a method for problem solving used in math and comput
 
 <p align="justify">
 The idea behind dynamic programming is quite simple. In general, to solve a given problem, we need to solve different parts of the problem, then combine the solutions of the subproblems to reach an overall solution. Often when using other method, many of the subproblems are generated and solved many times.
+
+For dynamic programming method, the code can be seen below:
+    
+```
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+void highest(int counter, int remainder);
+void lowest(int counter, int remainder, int m);
+int main (){
+    int m,s,i,k;
+    cin>>m>>s;
+    if((s<1 && m>1)||s>m*9)
+    cout<<-1<<' '<<-1<<endl;
+ 
+    else {
+        lowest(m-1,s,m);
+        cout << " ";
+        highest(m-1,s);
+    }
+}
+ 
+void lowest(int counter, int remainder, int m) {
+    int subtractor;
+    if (counter >= 0){
+        subtractor = max(0, remainder - 9 * counter);
+        if (subtractor == 0 && counter == m - 1 && remainder ) {
+            subtractor = 1;
+        }
+        remainder -= subtractor;
+        cout << subtractor;
+        counter--;
+        lowest(counter, remainder, m);
+    }
+}
+ 
+void highest(int counter, int remainder) {
+    int subtractor;
+    if (counter >= 0){
+        subtractor = min(9, remainder );
+        remainder -= subtractor;
+        cout << subtractor;
+        counter--;
+        highest(counter, remainder);
+    }
+}
+```
 
 ### Comparison
 In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids][1], while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
