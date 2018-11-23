@@ -127,21 +127,11 @@ The idea behind dynamic programming is quite simple. In general, to solve a give
 
 For dynamic programming method, the code can be seen below:
     
-```
-#include<iostream>
-#include<cmath>
-using namespace std;
+```c++
 
 void highest(int counter, int remainder);
 void lowest(int counter, int remainder, int m);
 
-int main ()
-{
-    int m,s,i,k;
-    cin>>m>>s;
-    if((s<1 && m>1)||s>m*9)
-    cout<<-1<<' '<<-1<<endl;
- 
     else
     {
         lowest(m-1,s,m);
@@ -213,6 +203,6 @@ Example #2:
 ~0.9sec
 ```
 
-From the experiment above, using dynamic programming is faster... a little bit...👌
+From the experiment above, using dynamic programming is faster... a little bit...👌 but with greedy approach its more easier to think.
 
 *Note: The time for the code to process also depends on the input time, so we try to quickly input the number repeatedly and count the average number.*
