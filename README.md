@@ -3,7 +3,7 @@ This repo will solve Codeforces problem [489 C](https://codeforces.com/problemse
 
 ## Team Member
 - [Alessandro Luiz Kartika](http://codeforces.com/profile/Elderhawk)
-- [Eugene Sebastian]
+- [Eugene Sebastian](https://codeforces.com/profile/nachos)
 - [Denny Raymond](http://codeforces.com/profile/dendenray)
 - [Steven](http://codeforces.com/profile/Steve2015) 
 
@@ -117,6 +117,8 @@ int main()
 
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/45753386)
 
+The complexity
+
 ### DP approach
 <p align="justify">
 Dynamic Programming (DP) is a method for problem solving used in math and computer science in which large problems are broken down into smaller problems. Through solving the individual smaller problems, the solution to the larger problem is discovered.
@@ -181,21 +183,18 @@ void highest(int counter, int remainder)
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/46112688)
 
 ### Comparison
-In conclusion, greedy algorithms solve combinatorial problems having the properties of [matroids][1], while dynamic programming is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
-
-[1]:https://en.wikipedia.org/wiki/Matroid
+<p align="justify">
+In conclusion, Dynamic Programming can first examine the path which takes the shortest time and then start journey, on the other hand Greedy algorithm take the optimal decision on the spot without thinking for the next step and on the next step change its decision again and so on...
 
 If we try to input the example above, we can get the time as follow:
 
 **With Greedy**
 
 Example 1:
-
 ```
 ~1.3sec
 ```
 Example 2:
-
 ```
 ~1sec
 ```
@@ -203,7 +202,6 @@ Example 2:
 **With Dynamic Programming**
 
 Example 1:
-
 ```
 ~1.2sec
 ```
