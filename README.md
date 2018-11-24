@@ -71,18 +71,11 @@ First we take as many nines as possible and decrease the sum by 9 respectively a
 
 ### Greedy Approach
 <p align="justify">
-For the greedy approach, we first check if the sum is lying between 1 and 9*(length of the numbers), if not than print -1 -1 ( i mean Maximum sum we can form with a number of length m is 9*m(by placing all nines) so if s is greater than 9*m there is no answer. 
+For the greedy approach, we first check if the sum is lying between 1 and 9*(length of the numbers), if not than print -1 -1 (i mean maximum sum we can form with a number of length m is 9*m (by placing all nines), so if s is greater than 9*m there is no answer. To find the maximum number, first we take as many 9 as possible and decrease the sum by 9 and when we sum become less than 9, we just print that digit and remaining digits should be zero.
 
-to find the maximum number, first we take as many 9 as possible and decrease the sum by 9 and when we sum become less than 9, we just print that digit and remaining digits should be zero.
+The hardest part its actually finding the minimum as there are restriction that there should be no leading zeroes, thus we can't just start assigning 9 to low priority digits ( digits on the right), to escape that. We transvers from i=m-1 to i=0 and filling every digit. Check if i=m-1 then he is filling 1st digit and (m-1) digits are remaining (excluding present digit). If i=m-2, then he is filling 2nd digit and (m-2) digits are remaining(excluding present digit). Thus if its at some i the i digits are remaining. Maximum possible sum we can form with those remaining i digits is 9*i and k is the remaining sum, since j=max(0,k-9*i), the we assign 1 to j (if i==m and j==9), its because we should not have a leading zeroes, so its taking j at that place and subtracting j from remain of sum k.
 
-The hardest part its actually finding the minimum as there are restriction that there should be no leading zeroes thus we can't just start assigning 9 to low priority digits ( digits on the right), to escape that. 
-we transvers from i=m-1 to i=0 and filling every digit. check 
-if i=m-1 then he is filling 1st digit and (m-1) digits are remaining (excluding present digit). if i=m-2 then he is filling 2nd digit and (m-2) digits are remaining(excluding present digit).
-thus if its at some i the i digits are remaining. 
-maximum possible sum we can form with those remaining i digits is 9*i and k is the remaining sum, since __j=max(0,k-9*i), the we assign 1 to j (if i==m and j==9), its because we should not have a leading zeroes, so its taking j at that place and subtracting j from remain of sum k.
-
-
-snipplet code:
+Snipplet code:
 
 ```c++
 
@@ -120,12 +113,11 @@ The complexity of greedy algorithm is O(n).
 
 ### DP approach
 <p align="justify">
-
-The way its solve is same with greedy, just we make function to find the highest and the lowest number possible. in this way we think the way the code run gonna become a little bit faster because it can be run at the same time. 
+The way its solve is same with greedy, just we make function to find the highest and the lowest number possible. With this way, we think the way the code run gonna become a little bit faster because it can be run at the same time. 
 
 The complexity of greedy algorithm is O(n).
 
-snipplet code : 
+Snipplet code: 
     
 ```c++
 
@@ -203,6 +195,6 @@ Example #2:
 ~0.9sec
 ```
 
-From the experiment above, using dynamic programming is faster... a little bit...👌 but with greedy approach its more easier to think.
+From the experiment above, using dynamic programming is faster, a little bit...👌; but with greedy approach its more easier to think.
 
 *Note: The time for the code to process also depends on the input time, so we try to quickly input the number repeatedly and count the average number.*
