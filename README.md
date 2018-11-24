@@ -185,4 +185,4 @@ If we try to input the example above, we can get the time as follow:
 ![dp](https://user-images.githubusercontent.com/25146223/48964960-1645f480-efe6-11e8-8156-881f4e074a1c.jpg)
 
 <p align="justify">
-From the experiment above, using dynamic programming is faster for the non -1 -1 output; but with greedy approach it's more faster to print the -1 -1 output. Dynamic programming also has consistent time (being 15ms) for each sample.
+From the experiment above, using dynamic programming is faster for the non -1 -1 output; but with greedy approach it's more faster to print the -1 -1 output. Dynamic programming also has consistent time (being 15ms) for each sample. Futhermore, greedy code is much easier to understand, than the dynamic programming one.
