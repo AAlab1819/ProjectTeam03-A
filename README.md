@@ -73,6 +73,7 @@ First we take as many nines as possible and decrease the sum by 9 respectively a
 <p align="justify">
 For the greedy approach, we first check if the sum is lying between 1 and 9*(length of the numbers), if not than print -1 -1 (i mean maximum sum we can form with a number of length m is 9*m (by placing all nines), so if s is greater than 9*m there is no answer. To find the maximum number, first we take as many 9 as possible and decrease the sum by 9 and when we sum become less than 9, we just print that digit and remaining digits should be zero.
 
+<p align="justify">
 The hardest part its actually finding the minimum as there are restriction that there should be no leading zeroes, thus we can't just start assigning 9 to low priority digits ( digits on the right), to escape that. We transvers from i=m-1 to i=0 and filling every digit. Check if i=m-1 then he is filling 1st digit and (m-1) digits are remaining (excluding present digit). If i=m-2, then he is filling 2nd digit and (m-2) digits are remaining(excluding present digit). Thus if its at some i the i digits are remaining. Maximum possible sum we can form with those remaining i digits is 9*i and k is the remaining sum, since j=max(0,k-9*i), the we assign 1 to j (if i==m and j==9), its because we should not have a leading zeroes, so its taking j at that place and subtracting j from remain of sum k.
 
 Snipplet code:
@@ -103,8 +104,6 @@ Snipplet code:
             k = k-j;
         }
     }
-    return 0;
-}
 ```
 
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/45753386)
@@ -164,7 +163,6 @@ void highest(int counter, int remainder)
         highest(counter, remainder);
     }
 }
-//if both counter<0, then end the program
 ```
 
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/46112688)
