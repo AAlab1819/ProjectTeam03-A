@@ -112,9 +112,16 @@ The complexity of greedy algorithm is O(n^2).
 
 ### DP approach
 <p align="justify">
-The way its solve is same with greedy, just we make function to find the highest and the lowest number possible. With this way, we think the way the code run gonna become a little bit faster because it can be run at the same time. 
+The way its solve is same with greedy, just we make function to find the highest and the lowest number possible. With this way, we think the way the code run gonna become a little bit faster because it can be run at the same time. There is a way of using an array in DP, like this:
 
-The complexity of greedy algorithm is O(n).
+```
+mindp[i][j] = i digit j sum minimum number witch leading zeros are NOT allowed 
+mindp2[i][j] = i digit j sum minimum number witch leading zeros are allowed
+
+now mindp[i][j] can update from mindp2[i-1][j-k] where k = [1,9]
+```
+
+But we scrapped the idea of using array and ended up with the code below.
 
 Snipplet code: 
     
