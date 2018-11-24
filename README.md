@@ -179,6 +179,6 @@ If we try to input the example above, we can get the time as follow:
 
 **With Dynamic Programming**
 
-
+![dp](https://user-images.githubusercontent.com/25146223/48964960-1645f480-efe6-11e8-8156-881f4e074a1c.jpg)
 
 From the experiment above, using dynamic programming is faster, a little bit...👌; but with greedy approach its more easier to think.
