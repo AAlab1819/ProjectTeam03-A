@@ -109,7 +109,7 @@ Snipplet code:
 
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/45753386)
 
-The complexity of greedy algorithm is O(n).
+The complexity of greedy algorithm is O(n^2).
 
 ### DP approach
 <p align="justify">
@@ -123,7 +123,8 @@ Snipplet code:
 
 void highest(int counter, int remainder);
 void lowest(int counter, int remainder, int m);
-
+{
+    //if the output isn't -1 -1, go to else function
     else
     {
         lowest(m-1,s,m);
@@ -131,7 +132,8 @@ void lowest(int counter, int remainder, int m);
         highest(m-1,s);
     }
 }
- 
+
+//the first output, the minimum
 void lowest(int counter, int remainder, int m)
 {
     int subtractor;
@@ -148,11 +150,13 @@ void lowest(int counter, int remainder, int m)
         lowest(counter, remainder, m);
     }
 }
- 
+
+//the second output, the maximum
 void highest(int counter, int remainder)
 {
     int subtractor;
-    if (counter >= 0){
+    if (counter >= 0)
+    {
         subtractor = min(9, remainder );
         remainder -= subtractor;
         cout << subtractor;
@@ -160,11 +164,12 @@ void highest(int counter, int remainder)
         highest(counter, remainder);
     }
 }
+//if both counter<0, then end the program
 ```
 
 The solution link can be seen [here](https://codeforces.com/contest/489/submission/46112688)
 
-The complexity for dynamic programming is O(n).
+The complexity for dynamic programming is O(n^2).
 
 ### Comparison
 <p align="justify">
