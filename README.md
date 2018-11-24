@@ -174,27 +174,11 @@ If we try to input the example above, we can get the time as follow:
 
 **With Greedy**
 
-Example #1:
-```
-~1.3sec
-```
-Example #2:
-```
-~1sec
-```
+![greedy](https://user-images.githubusercontent.com/25146223/48964956-f9112600-efe5-11e8-9cee-5b7c1d71182c.jpg)
+
 
 **With Dynamic Programming**
 
-Example #1:
-```
-~1.2sec
-```
 
-Example #2:
-```
-~0.9sec
-```
 
 From the experiment above, using dynamic programming is faster, a little bit...👌; but with greedy approach its more easier to think.
-
-*Note: The time for the code to process also depends on the input time, so we try to quickly input the number repeatedly and count the average number.*
