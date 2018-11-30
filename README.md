@@ -115,14 +115,23 @@ The complexity of greedy algorithm is O(n^2).
         Using the BigInteger class from Java we are able to calculate for large sums of numbers. The first condition is to check for a        particular case i.e if sum = 0 and digit = 1. Next is to check whether the inputs are valid or not, if the sum is less than 1 or if
     the sum is too large for the amount of digits that is set we return -1 -1. Finally if non of these conditions are met the program 
     goes to the algorithm. 
+    Here things get solved by using a nested loop which intializes dp[i][j] to zero and dp1 to variable number1 which is set to an extremely high value. Next the program iterates from 1 to 9 since the max single digit is 9, which is used to map dp[1][i] and dp1[1][i] The function then loops again with a triple nested for loop that is used to obtain the max value there is k <= j which acts as a
+    digit cap, in the test case below since j is 15 it loops 15 times and hence the first digit is 9 since it is greater than 15. It then adds up by 1 until it is capped to 15 where in this case 15 - 9 = 6 hence 96 is output 1.
     
-    ```
+    
+ 
+ The next loop is to find the minimum which is pretty much the same as for finding the max however the operation is inversed, instead of looking for the front digit first the program starts from the back. In the case of sum = 15 and digit = 2 the program checks if it can reach 9 which it does and then from there the remainder 15 - 9 = 6 is put to the front digit.
+ 
+    
+```   
+Test case for the max digit note min digit is full of big numbers so it's too confusing to read i.i 91111111111111111111111....
+Sum = 15 
+Digit = 2
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
     0 1 2 3 4 5 6 7 8 9 0 0 0 0 0 0 
     0 10 20 30 40 50 60 70 80 90 91 92 93 94 95 96
-    ```
+ ```
     
-        Here things get solved by using a nested loop which intializes dp[i][j] to zero and dp1 to variable number1 which is set to an extremely high value. Next the program iterates from 1 to 9 since the max single digit is 9, which is used to map dp[1][i] and dp1[1][i] The function then loops again with a triple nested for loop that compares between the various digits  
 Snipplet code: 
     
 ```
