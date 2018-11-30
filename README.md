@@ -119,7 +119,7 @@ The complexity of greedy algorithm is O(n^2).
 Snipplet code: 
     
 ```
-        if (sum == 0 && digit == 1)
+       if (sum == 0 && digit == 1)
             System.out.println("0 0");
         else if (sum < 1 || sum > 9 * digit)
             System.out.println("-1 -1");
