@@ -112,67 +112,15 @@ The complexity of greedy algorithm is O(n^2).
 
 ### DP approach
 <p align="justify">
-The way its solve is same with greedy, just we make function to find the highest and the lowest number possible. With this way, we think the way the code run gonna become a little bit faster because it can be run at the same time. There is a way of using an array in DP, like this:
-
-```
-min1[i][j] = i digit j sum minimum number with leading zeros are NOT allowed 
-min2[i][j] = i digit j sum minimum number with leading zeros are allowed
-
-min1[i][j] can update from min2[i-1][j-k] where k = [1,9]
-```
-
-But we scrapped the idea of using array and ended up with the code below.
+    // DP explanation here
 
 Snipplet code: 
     
-```c++
-
-void highest(int counter, int remainder);
-void lowest(int counter, int remainder, int m);
-{
-    //if the output isn't -1 -1, go to else function
-    else
-    {
-        lowest(m-1,s,m);
-        cout << " ";
-        highest(m-1,s);
-    }
-}
-
-//the first output, the minimum
-void lowest(int counter, int remainder, int m)
-{
-    int subtractor;
-    if (counter >= 0)
-    {
-        subtractor = max(0, remainder - 9 * counter);
-        if (subtractor == 0 && counter == m - 1 && remainder )
-        {
-            subtractor = 1;
-        }
-        remainder -= subtractor;
-        cout << subtractor;
-        counter--;
-        lowest(counter, remainder, m);
-    }
-}
-
-//the second output, the maximum
-void highest(int counter, int remainder)
-{
-    int subtractor;
-    if (counter >= 0)
-    {
-        subtractor = min(9, remainder );
-        remainder -= subtractor;
-        cout << subtractor;
-        counter--;
-        highest(counter, remainder);
-    }
-}
+```
+code here
 ```
 
-The solution link can be seen [here](https://codeforces.com/contest/489/submission/46112688)
+The solution link can be seen [here](https://codeforces.com/contest/489/submission/46389138)
 
 The complexity for dynamic programming is O(n^2).
 
