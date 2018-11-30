@@ -136,7 +136,7 @@ Digit = 2
     
 Snipplet code: 
     
-```
+```java
        if (sum == 0 && digit == 1)
             System.out.println("0 0");
         else if (sum < 1 || sum > 9 * digit)
