@@ -124,7 +124,7 @@ The complexity of greedy algorithm is O(n^2).
  
     
 ```   
-Test case for the max digit 
+Test case for the max digit which displays array dp, the array that is used for max
 note: min digit is full of big numbers so it's too confusing to read i.e 91111111111111111111111....
 Sum = 15 
 Digit = 2
