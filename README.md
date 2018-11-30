@@ -189,6 +189,8 @@ The complexity for dynamic programming is O(n^2).
  DP     : 1.736204  | 0.414632  | 1.736204  | 20.18715  | 179.956896    |1 75.354735
 
  ```
+ 
+ 
 The Graphics looks like this :
 ![Graph] (https://github.com/AAlab1819/ProjectTeam03-A/blob/master/githubb.jpg)
 
