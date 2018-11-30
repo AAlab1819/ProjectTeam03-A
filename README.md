@@ -190,7 +190,8 @@ The complexity for dynamic programming is O(n^2).
 
 
 The Graph looks like this :
-![graph](https://user-images.githubusercontent.com/42437225/49300067-e3bf5e80-f4f3-11e8-9b20-e629e8ba7838.jpg)
+
+![giyyyy](https://user-images.githubusercontent.com/42437225/49300220-3b5dca00-f4f4-11e8-86b0-402b25cfa4d1.jpg)
 
 In conclusion, Dynamic Programming can first examine the path which takes the shortest time and then start journey, on the other hand Greedy algorithm take the optimal decision on the spot without thinking for the next step and on the next step change its decision again and so on...
 
